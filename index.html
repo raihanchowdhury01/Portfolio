@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- row css link -->
+        <link rel="stylesheet" href="style.css">
+        <!-- tailwind cdn link -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- font awesome cdn link -->
+        <script src="https://kit.fontawesome.com/cc76e3cc3d.js"
+            crossorigin="anonymous"></script>
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+    </head>
+    <body class="cursor-default">
+    <!-- cursor pointer design -->
+    <div class="w-[20px] h-[20px] left-[-50px] top-[-20px] border-purple-900 border-2 rounded-full absolute" id="pointer">
+
+    </div>
+        <!-- small device design start -->
+        <!-- navigation section -->
+        <div>
+            <nav class="">
+                <div
+                    class="sm:flex sm:items-center sm:justify-between shadow py-4 sm:px-10">
+                    <div class="flex justify-between items-center mx-4 ">
+                        <div>
+                            <h1 class="text-3xl text-gray-400">Developer</h1>
+                        </div>
+                        <div class="sm:hidden">
+                            <button class="btn"><i
+                                    class="fa-solid fa-bars text-3xl"></i></button>
+                        </div>
+                    </div>
+                    <!-- For small device -->
+                    <div
+                        class="absolute px-[45%] h-[60vh] py-[20vh] bg-gray-300 w-full item sm:hidden">
+                        <ul class="md:flex">
+                            <li><a href="#">Home</a></li>
+                            <li class="md:mx-10"><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li class="md:mx-10"><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li class="md:mx-10"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- For large device -->
+                    <div class="lg_device">
+                        <ul class="md:flex">
+                            <li><a href="#">Home</a></li>
+                            <li class="md:mx-10"><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li class="md:mx-10"><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#skill">Skill</a></li>
+                            <li class="md:mx-10"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <!-- header section -->
+        <!-- flex justify-between items-center mx-36 mt-[15vh] -->
+        <div class="sm:flex sm:justify-between sm:items-center sm:mx-36 sm:mt-[15vh] space-y-10">
+            <div class="text-gray-600 scale-x-200 space-y-3 mx-16">
+                <!-- <h1><span id="element"></span></h1> -->
+                <h1 class="text-4xl">Hi, I'm Md Raihan.</h1>
+                <p class=" text-3xl">I'm a <span id="element"></span></p>
+                <p class="text-xl w-[70%]">I'm from Bangladesh. I will help you to build your next project that will make your users friendly.</p>
+                <div class="space-x-5 sm:space-x-10 items-center flex">
+                    <button class="items-center sm:text-xl text-white bg-green-600 px-5 sm:px-20 py-2 rounded hover:bg-[#6c6c6c] transform hover:scale-105 duration-500"><i class="fa-solid fa-message sm:text-xl"></i> Hire Me!</button>
+                    <button class="items-center text-xl bg-yellow-500 text-black px-5 sm:px-20 py-2 rounded hover:bg-[#eeeded] transform hover:scale-105 duration-500"><i class="fa-brands fa-github text-2xlX"></i> Browse Projects</button>
+                </div>
+            </div>
+            <div class="rounded-full ring-3 border-green-500 ms-16">
+                <img class="w-[400px] h-full ring-4 rounded-full ring-offset-[20px] border-indigo-400 border-4" src="Image/WhatsApp Image 2024-02-14 at 09.45.38_820241a5.jpg" alt="">
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="my-20" id="about">
+            <div>
+                <h1 class="w-25 mx-[35%] my-16 text-3xl sm:mx-[45%]">About Us</h1>
+            </div>
+            <div class="space-y-16 sm:flex sm:justify-between sm:items-center sm:ms-[20%]">
+                <div class="">
+                    <img class="sm:w-[800px] h-[40vh] mx-auto" src="Image/developer.jpg" alt="">
+                </div>
+                <div>
+                    <p class="w-[90%] mx-auto text-gray-700 sm:w-[50%]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint hic corrupti suscipit cum laborum eum, est minima cumque? Vel vitae non officia quam quae facere modi, obcaecati perspiciatis velit. Odio, cupiditate praesentium laborum ipsa quos explicabo harum dolorum ad eveniet voluptates, illum accusantium quisquam id. Adipisci beatae iure ex tenetur.</p>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="bg-black text-white px-5 py-3 rounded-full"><i class="fa-solid fa-download"></i> Download CV</button>
+            </div>
+        </div>
+
+        <!-- service section -->
+        <div id="service">
+            <div class="">
+                <h1 class="text-center sm:text-3xl text-gray-600 mt-36 mb-10">Services</h1>
+            </div>
+            <div class="sm:mx-10 sm:gap-10 space-y-10 grid sm:grid-cols-3" id="web">
+                <div class="space-y-5 box-border py-5 px-20 border-2 text-gray-600 w-[90%] mx-auto shadow hover:shadow-2xl transform hover:scale-105 duration-500 sm:mt-10">
+                    <p class="text-sky-500 text-5xl font-semibold text-center ">{&nbsp;}</p>
+                    <h2 class="text-3xl ">UI/UX Design</h2>
+                    <p>I'm a web designer</p>
+                    <button class="bg-gray-200 px-5 py-3 rounded">Read More...</button>
+                </div>
+                <div class="space-y-5 box-border py-5 px-20 border-2 text-gray-600 w-[90%] mx-auto shadow hover:shadow-2xl transform hover:scale-105 duration-500">
+                    <p class="text-sky-500 text-5xl font-semibold text-center "><i class="fa-solid fa-palette"></i></p>
+                    <h2 class="text-3xl ">Responsive</h2>
+                    <p>I make the website responsive design for all devices</p>
+                    <button class="bg-gray-200 px-5 py-3 rounded">Read More...</button>
+                </div>
+                <div class="space-y-5 box-border py-5 px-20 border-2 text-gray-600 w-[90%] mx-auto shadow hover:shadow-2xl transform hover:scale-105 duration-500">
+                    <p class="text-sky-500 text-5xl font-semibold text-center "><i class="fa-solid fa-money-bill-trend-up"></i></p>
+                    <h2 class="text-3xl ">Back-end</h2>
+                    <p>I'm a web developer. I had working on Back-end development</p>
+                    <button class="bg-gray-200 px-5 py-3 rounded">Read More...</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio section -->
+        <div id="portfolio">
+            <div>
+                <h1 class="text-center sm:text-3xl text-gray-600 mt-36 mb-10">My Portfolio</h1>
+                <p class="text-center text-2xl text-gray-400">Just click on image for visit that site</p>
+            </div>
+            <div class="mx-10">
+                <div class="portfolio_div space-y-14 grid sm:grid-cols-3 sm:gap-8">
+                    <div class="h-[50vh] mt-14 shadow transform hover:scale-105 duration-500 hover:shadow">
+                        <a href="https://cosmic-starship-ae9d0e.netlify.app/"><img src="Image/quize site.png" alt=""></a>
+                    </div>
+                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                        <a href="https://fantastic-creponne-61c4cf.netlify.app/"><img src="Image/tempareture.png" alt=""></a>
+                    </div>
+                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                        <a href="https://raihanchowdhury01.github.io/assainment-5/"><img src="Image/calculate.png" alt=""></a>
+                    </div>
+                    <div class="shadow transform hover:scale-105 duration-500 hover:shadow">
+                        <a href="https://iridescent-valkyrie-ff4fc7.netlify.app/"><img src="Image/e-commerce.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- skill section -->
+        <div id="skill">
+            <div>
+                <h1 class="text-center sm:text-3xl text-gray-600 mt-36 mb-10">My Skill</h1>
+            </div>
+            <div class="sm:w-[30%] w-[90%] mx-[10%]">
+                <ul class="skill">
+                  <li class="html">HTML ~ 90%</li>
+                  <li class="css">CSS ~ 60%</li>
+                  <li class="js">JavaScript ~ 50%</li>
+                  <li class="react">ReactJs ~ 30%</li>
+                  <li class="php">PHP ~ 60%</li>
+                  <li class="laravel">Laravel ~ 10%</li>
+                  <li class="sql">MySQL ~ 60%</li>
+                </ul>
+              </div>
+        </div>
+        <!-- contact section design -->
+        <div>
+            <h1 class="text-center sm:text-3xl text-gray-600 mt-36 mb-10">Contact Us</h1>
+        </div>
+        <div>
+        <div class="mx-10 sm:flex sm:items-center sm:justify-around" id="contact">
+            
+                <div class="sm:w-[700px] w-[400px]">
+                    <label for="name">Name</label><br>
+                    <input class=" px-5 py-1 border border-3 border-gray-500 w-full" type="text" name="name" id="" placeholder="Enter your name"><br><br>
+                    <label for="email">Email</label><br>
+                    <input class="px-5 py-1 border border-3 border-gray-500 w-full" type="text" name="email" id="" placeholder="Enter your Email"><br><br>
+                    <label for="message">Message</label><br>
+                    <textarea class="px-5 py-1 border border-3 border-gray-500 w-full" name="message" id="" cols="30" rows="6" placeholder="Enter your message"></textarea><br><br>
+                    <button class="px-10 py-2 bg-green-500 transform hover:scale-100 duration-500 hover:bg-gray-500 rounded text-xl text-white"><i class="fa-brands fa-telegram text-2xl"></i> Submit</button>
+                </div>
+                
+                <div class="mt-20 px-20 py-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 sm:w-[30%] text-xl text-gray-300 sm:mt-[-20px] rounded-xl shadow transform hover:scale-105 duration-500">
+                <div>
+                    <h1 class="text-3xl">Contact Information</h1>
+                    <p><i class="fa-solid fa-phone text-green-500"></i> +8801965240019</p>
+                    <p><i class="fa-solid fa-envelope text-black"></i> raihan696@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot text-sky-400"></i> Joypurhat, Rajshahi, Bangladesh</p>
+                    <div class="space-x-5 text-2xl mt-3">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section design -->
+        <footer class="sm:bg-black text-white text-center mt-20">
+            <div class=" space-y-5 py-20">
+                <div class="space-x-5 text-2xl mt-3">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="mx-[35%]">
+                    <ul class="md:flex">
+                        <li><a href="#">Home</a></li>
+                        <li class="md:mx-10"><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li class="md:mx-10"><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li class="md:mx-10"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <p>Copyright &copy; 2024; Designed by Raihan</p>
+            </div>
+        </footer>
+        <!-- typing js -->
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ 
+  <script>
+    var typed = new Typed('#element', {
+      strings: [`Full Stack Developer`, `UI Designer`],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+        <script src="script.js"></script>
+    </body>
+</html>
