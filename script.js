@@ -7,4 +7,8 @@ const cursor = document.getElementById('pointer');
 document.onmousemove = (e) => {
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
+    cursor.style.display = "block";
 };
+document.onmouseout = () => {
+    cursor.style.display = "none";
+}
