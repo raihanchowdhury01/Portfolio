@@ -1,5 +1,6 @@
 let btn = document.querySelector('.btn');
 let nav = document.querySelector('.item');
+let x = document.querySelector(".x_bar");
 btn.addEventListener('click', ()=>{
     nav.classList.toggle('active');
 });
@@ -11,4 +12,8 @@ document.onmousemove = (e) => {
 };
 document.onmouseout = () => {
     cursor.style.display = "none";
-}
+};
+
+x.addEventListener("click", ()=>{
+    nav.classList.remove('active');
+});

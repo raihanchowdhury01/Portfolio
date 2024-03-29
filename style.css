@@ -1,4 +1,4 @@
-@media (max-width:700px) {
+@media (max-width:767px) {
     .item{
         display: none;
         color: #6c6c6c;
@@ -11,7 +11,10 @@
         display: none;
     }
 }
-
+#pointer{
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
 .skill>li{
     margin: 30px 0;
     position: relative;
